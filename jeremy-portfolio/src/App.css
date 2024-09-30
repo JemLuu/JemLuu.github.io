@@ -1,16 +1,45 @@
-body, html, #root {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  font-family: Arial, sans-serif;
-}
-
-.App {
-  text-align: center;
-}
-
-.content-container {
-  position: relative;
-  z-index: 2; /* Ensures content is above the parallax background */
+.about-grid {
+  display: flex;
+  flex-direction: row; /* By default, text on the left, image on the right */
+  align-items: center;
+  justify-content: space-between;
   padding: 20px;
+  border-radius: 15px;
+  gap: 20px; /* Adds spacing between the text and image */
+  width:100%;
+}
+
+.about-text {
+  flex: 1;
+  text-align: left;
+}
+
+.about-text h3 {
+  margin-bottom: 20px;
+  font-size: 1.8em;
+}
+
+.about-text ul {
+  list-style-type: disc;
+  padding-left: 20px; /* Indent bullet points */
+}
+
+.about-text li {
+  margin-bottom: 10px; /* Space between list items */
+}
+
+.about-image img {
+  width: 300px; /* Adjust the size of the image */
+  height: 300px;
+  border-radius: 50%; /* Makes the image circular */
+  object-fit: cover; /* Ensures the image fills the circle without stretching */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for effect */
+}
+
+/* Media query for screens smaller than 640px */
+@media (max-width: 640px) {
+  .about-grid {
+      flex-direction: column; /* Stack text and image vertically */
+      align-items: center; /* Center-align content */
+  }
 }

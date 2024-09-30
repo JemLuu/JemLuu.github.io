@@ -10,15 +10,16 @@ const Header = () => {
             <header className="header">
                 <h1>Jeremy Luu</h1>
                 <div className="icon-links">
-                    <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">
+                    <a href="https://github.com/JemLuu" target="_blank" rel="noopener noreferrer">
                         <FontAwesomeIcon icon={faGithub} size="2x" />
                     </a>
-                    <a href="https://www.linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.linkedin.com/in/jeremy-luu1/" target="_blank" rel="noopener noreferrer">
                         <FontAwesomeIcon icon={faLinkedin} size="2x" />
                     </a>
-                    <a href="path-to-your-resume.pdf" target="_blank" rel="noopener noreferrer">
+                    <a href="../assets/Jeremy_Luu_Resume.pdf" target="_blank" rel="noopener noreferrer">
                         <FontAwesomeIcon icon={faFileAlt} size="2x" />
                     </a>
+                    {/* might want to get rid of the email and put it on the bottom or something */}
                     <a href="mailto:your-email@example.com">
                         <FontAwesomeIcon icon={faEnvelope} size="2x" />
                     </a>

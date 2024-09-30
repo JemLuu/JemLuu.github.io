@@ -31,3 +31,43 @@ h2 {
     border-radius: 50%;
     margin-left: auto;
 }
+
+.experience-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three equal columns */
+    gap: 20px; /* Spacing between grid items */
+}
+
+.experience-item {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for effect */
+}
+
+.experience-item h4 {
+    margin-bottom: 10px;
+    flex-grow: 1; /* Ensures the heading grows to push the image down */
+}
+
+.experience-item img {
+    max-width: 300px; /* Increased size for logos */
+    height: 200px;
+    margin-top: 10px;
+    object-fit: contain; /* Keep logos proportionate */
+    align-self: flex-end; /* Align image to the bottom of the flexbox */
+}
+
+
+@media (max-width: 1224px) {
+    .experience-grid {
+        grid-template-columns: repeat(2, 1fr); /* Two columns on smaller screens */
+    }
+}
+
+@media (max-width: 940px) {
+    .experience-grid {
+        grid-template-columns: 1fr; /* One column on very small screens */
+    }
+}
