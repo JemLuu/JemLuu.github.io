@@ -1,7 +1,7 @@
 {
   "name": "jeremy-portfolio",
   "version": "0.1.0",
-  "homepage": "https://jemluu.github.io/website",
+  "homepage": "https://jemluu.github.io/",
   "private": true,
   "dependencies": {
     "@fortawesome/free-brands-svg-icons": "^6.6.0",
