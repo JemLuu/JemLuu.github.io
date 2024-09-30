@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/website/static/css/main.83cf5728.css",
-    "main.js": "/website/static/js/main.7f7228f2.js",
-    "static/media/extendedbackground.png": "/website/static/media/extendedbackground.7e4bc8fe5fb5ced92244.png",
-    "static/media/headshot.jpeg": "/website/static/media/headshot.d82ef27498895a7ef13b.jpeg",
-    "static/media/csc.png": "/website/static/media/csc.efc2fb9872697662dfa1.png",
-    "static/media/sunraydrugs.png": "/website/static/media/sunraydrugs.d9502c89fc012a5aa3c5.png",
-    "static/media/comcast.png": "/website/static/media/comcast.5fdcd0e2354c4209df43.png",
-    "static/media/pitt.png": "/website/static/media/pitt.6a9b3fe1d8c0b885fcb3.png",
-    "index.html": "/website/index.html",
-    "main.83cf5728.css.map": "/website/static/css/main.83cf5728.css.map",
-    "main.7f7228f2.js.map": "/website/static/js/main.7f7228f2.js.map"
+    "main.css": "/static/css/main.3c717500.css",
+    "main.js": "/static/js/main.126d067e.js",
+    "static/media/extendedbackground.png": "/static/media/extendedbackground.7e4bc8fe5fb5ced92244.png",
+    "static/media/headshot.jpeg": "/static/media/headshot.d82ef27498895a7ef13b.jpeg",
+    "static/media/csc.png": "/static/media/csc.efc2fb9872697662dfa1.png",
+    "static/media/sunraydrugs.png": "/static/media/sunraydrugs.d9502c89fc012a5aa3c5.png",
+    "static/media/comcast.png": "/static/media/comcast.5fdcd0e2354c4209df43.png",
+    "static/media/pitt.png": "/static/media/pitt.6a9b3fe1d8c0b885fcb3.png",
+    "index.html": "/index.html",
+    "main.3c717500.css.map": "/static/css/main.3c717500.css.map",
+    "main.126d067e.js.map": "/static/js/main.126d067e.js.map"
   },
   "entrypoints": [
-    "static/css/main.83cf5728.css",
-    "static/js/main.7f7228f2.js"
+    "static/css/main.3c717500.css",
+    "static/js/main.126d067e.js"
   ]
 }
