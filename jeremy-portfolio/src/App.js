@@ -108,7 +108,19 @@ function App() {
                                     </a>
                                 </li>
                             </ul>
-                        </div>                  
+                        </div>     
+                        <div className="project-item">
+                            <h3>website</h3>
+                            <ul>
+                                <li>This website you're on is a project of mine too!</li>
+                                <li>React, HTML/CSS</li>
+                                <li>
+                                    <a href="https://github.com/JemLuu/website" target="_blank" rel="noopener noreferrer">
+                                        github repo
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>                 
                     </div>  
                 </Section>
             </div>

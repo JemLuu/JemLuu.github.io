@@ -3,8 +3,8 @@
     position: fixed;
     top: -10vh;
     left: 0;
-    width: 200vh;
-    height: 450vh; /* Increased height for better scrolling */
+    width: 210vh;
+    height: 480vh; /* Increased height for better scrolling */
     background-size: 100%; /* Zoom in on the background */
     background-position: center;
     background-repeat: no-repeat;
