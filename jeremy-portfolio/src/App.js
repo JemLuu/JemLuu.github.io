@@ -20,7 +20,7 @@ function App() {
                                 <li>am first chair violinist for the university Symphony Orchestra</li>
                                 <li>am the Video Media Officer for Computer Science Club (@csc.at.pitt reels on instagram)</li>
                                 <ul>
-                                    <li>50+ million views and 10x following</li>
+                                    <li>not to brag but... 50+ million views and 10x-ed the following in 2 months</li>
                                 </ul>
                                 <li>like to play Squash</li>
                                 <li>like to Ski</li>
@@ -60,18 +60,56 @@ function App() {
                     </div>
                 </Section>
                 <Section title="Projects">
-                    <div>
-                        <h4>Project 1</h4>
-                    </div>
-                    <div>
-                        <h4>Project 2</h4>
-                    </div>
-                    <div>
-                        <h4>Project 3</h4>
-                    </div>
-                    <div>
-                        <h4>Project 4</h4>
-                    </div>                    
+                    <div className="project-grid">
+                        <div className="project-item">
+                            <h4>Social Space</h4>
+                            <ul>
+                                <li>Graphically represented TikTok's social media algorithm</li>
+                                <li>React, Flask, Data Scraping, REST API, JavaScript</li>
+                                <li>
+                                    <a href="https://github.com/braynguyen/The-Social-Space" target="_blank" rel="noopener noreferrer">
+                                        github repo
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div className="project-item">
+                            <h4>Pill Counter</h4>
+                            <ul>
+                                <li>Program and apparatus to count pills visually</li>
+                                <li>Python, OpenCV</li>
+                                <li>
+                                    <a href="https://github.com/JemLuu/Pilluu" target="_blank" rel="noopener noreferrer">
+                                        github repo
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div className="project-item">
+                            <h4>Blink Buddy</h4>
+                            <ul>
+                                <li>Program to remind the user to blink</li>
+                                <li>Python, OpenCV, Tkinter</li>
+                                <li>
+                                    <a href="https://github.com/JemLuu/CSC-Hacks-2023" target="_blank" rel="noopener noreferrer">
+                                        github repo
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div className="project-item">
+                            <h3>Side Quest</h3>
+                            <ul>
+                                <li>iOS App that gives the user fun quests to take on</li>
+                                <li>Swift, SwiftUI, Xcode</li>
+                                <li>
+                                    <a href="https://github.com/JemLuu/SheInnovates2023" target="_blank" rel="noopener noreferrer">
+                                        github repo
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>                  
+                    </div>  
                 </Section>
             </div>
         </div>

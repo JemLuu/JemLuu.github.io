@@ -20,7 +20,7 @@ const Header = () => {
                         <FontAwesomeIcon icon={faFileAlt} size="2x" />
                     </a>
                     {/* might want to get rid of the email and put it on the bottom or something */}
-                    <a href="mailto:your-email@example.com">
+                    <a href="jdl137@pitt.edu">
                         <FontAwesomeIcon icon={faEnvelope} size="2x" />
                     </a>
                 </div>

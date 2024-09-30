@@ -59,6 +59,34 @@ h2 {
     align-self: flex-end; /* Align image to the bottom of the flexbox */
 }
 
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two equal columns */
+    gap: 20px; /* Spacing between grid items */
+    width: 100%; /* Ensure the grid takes the full width of the container */
+    align-items: start; /* Align grid items at the start (top) */
+}
+
+.project-item {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for effect */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%; /* Ensure the item grows to fit the content */
+    min-height: 200px; /* Add a minimum height for visual consistency */
+    box-sizing: border-box; /* Ensure padding is included in height/width */
+}
+
+/* Adjust for smaller screens */
+@media (max-width: 768px) {
+    .project-grid {
+        grid-template-columns: 1fr; /* One column on smaller screens */
+    }
+}
+
 
 @media (max-width: 1224px) {
     .experience-grid {

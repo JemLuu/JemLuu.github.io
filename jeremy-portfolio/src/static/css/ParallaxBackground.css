@@ -1,14 +1,15 @@
 .parallax {
-    background-image: url('../assets/background.jpg'); /* Replace with your image path */
+    background-image: url('../assets/extendedbackground.png'); /* Replace with your image path */
     position: fixed;
-    top: -80vh;
+    top: -10vh;
     left: 0;
     width: 200vh;
-    height: 300vh; /* Increased height for better scrolling */
+    height: 450vh; /* Increased height for better scrolling */
     background-size: 100%; /* Zoom in on the background */
     background-position: center;
     background-repeat: no-repeat;
     z-index: -1;
     transform: translateY(0); /* Start at the top */
 }
+
 
