@@ -1,5 +1,12 @@
 section {
-    margin-bottom: 20px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow */
+    position: relative;
+    z-index: 2;
+    width: 80%;
 }
 
 h2 {
@@ -9,7 +16,7 @@ h2 {
 }
 
 .content {
-    background-color: #c1dbb8;
+    background-color: #ffe5e5;
     padding: 20px;
     border-radius: 10px;
     position: relative;

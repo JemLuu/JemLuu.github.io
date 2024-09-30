@@ -1,12 +1,16 @@
 body, html, #root {
   margin: 0;
   padding: 0;
+  height: 100%;
   font-family: Arial, sans-serif;
 }
 
-.container {
-  width: 80%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px 0;
+.App {
+  text-align: center;
+}
+
+.content-container {
+  position: relative;
+  z-index: 2; /* Ensures content is above the parallax background */
+  padding: 20px;
 }

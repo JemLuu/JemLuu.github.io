@@ -1,21 +1,39 @@
-/* Header styling */
-header {
-    background-color: #e3af60;
+.header {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
     padding: 20px;
-    text-align: left;
-    color: #000;
+    position: relative;
+    z-index: 1;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    width: 90%;
+}
+
+.icon-links {
+    margin-top: 10px;
+}
+
+.icon-links a {
+    color: #333; /* Default icon color */
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+.icon-links a:hover {
+    color: #f28b25; /* Color on hover, feel free to customize */
 }
 
 h1 {
     margin: 0;
     font-size: 3.5em;
     font-weight: bold;
-    margin-left: 25%;
 }
 
-/* Color line under the header */
+/* Color line under the header
 .color-line {
     background-color: #FE5D25;
     height: 5px;
     width: 100%;
-}
+    border-radius: 15px;
+} */
