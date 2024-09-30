@@ -16,7 +16,7 @@ const Header = () => {
                     <a href="https://www.linkedin.com/in/jeremy-luu1/" target="_blank" rel="noopener noreferrer">
                         <FontAwesomeIcon icon={faLinkedin} size="2x" />
                     </a>
-                    <a href="/Jeremy_Luu_Resume.pdf" target="_blank" rel="noopener noreferrer">
+                    <a href="/Jeremy_Luu_resume.pdf" target="_blank" rel="noopener noreferrer">
                         <FontAwesomeIcon icon={faFileAlt} size="2x" />
                     </a>
                     {/* might want to get rid of the email and put it on the bottom or something */}
