@@ -16,11 +16,11 @@ const Header = () => {
                     <a href="https://www.linkedin.com/in/jeremy-luu1/" target="_blank" rel="noopener noreferrer">
                         <FontAwesomeIcon icon={faLinkedin} size="2x" />
                     </a>
-                    <a href="../assets/Jeremy_Luu_Resume.pdf" target="_blank" rel="noopener noreferrer">
+                    <a href="/Jeremy_Luu_Resume.pdf" target="_blank" rel="noopener noreferrer">
                         <FontAwesomeIcon icon={faFileAlt} size="2x" />
                     </a>
                     {/* might want to get rid of the email and put it on the bottom or something */}
-                    <a href="jdl137@pitt.edu">
+                    <a href="mailto:jdl137@pitt.edu">
                         <FontAwesomeIcon icon={faEnvelope} size="2x" />
                     </a>
                 </div>
