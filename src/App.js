@@ -3,7 +3,7 @@ import Header from './static/js/Header';
 import ParallaxBackground from './static/js/ParallaxBackground';
 import Section from './static/js/Section';
 import './App.css';
-
+// npm run Deploy (so i don't forget lol)
 function App() {
     return (
         <div className="App">
