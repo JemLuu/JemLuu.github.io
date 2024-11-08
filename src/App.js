@@ -20,7 +20,7 @@ function App() {
                                 <li>am first chair violinist for the university Symphony Orchestra</li>
                                 <li>am the Video Media Officer for Computer Science Club (@csc.at.pitt reels on instagram)</li>
                                 <ul>
-                                    <li>gained 70+ million views and 10k+ followers</li>
+                                    <li>acquired 70+ million views and 10k+ followers in 4 months!</li>
                                 </ul>
                                 <li>like to play Squash</li>
                                 <li>like to Ski</li>
