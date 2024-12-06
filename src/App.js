@@ -17,10 +17,10 @@ function App() {
                             <h3>A little about me, I...</h3>
                             <ul>
                                 <li>study Computer Science @ University of Pittsburgh</li>
-                                <li>am first chair violinist for the university Symphony Orchestra</li>
-                                <li>am the Video Media Officer for Computer Science Club (@csc.at.pitt reels on instagram)</li>
+                                <li>am co-concertmaster violinist for the university Symphony Orchestra</li>
+                                <li>am the Video Media Officer for Computer Science Club (<a href='https://www.instagram.com/csc.at.pitt/reels/' target="_blank">@csc.at.pitt</a> reels on instagram)</li>
                                 <ul>
-                                    <li>acquired 70+ million views and 10k+ followers in 3 months!</li>
+                                    <li>acquired 70+ million views and 10k+ followers in 3 months! (from no views and 400 followers)</li>
                                 </ul>
                                 <li>like to play Squash</li>
                                 <li>like to Ski</li>
