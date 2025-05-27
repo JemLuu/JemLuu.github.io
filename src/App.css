@@ -34,6 +34,12 @@
   border-radius: 50%; /* Makes the image circular */
   object-fit: cover; /* Ensures the image fills the circle without stretching */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for effect */
+  transition: transform 0.4s cubic-bezier(0.23, 1, 0.32, 1), box-shadow 0.3s;
+}
+
+.about-image img:hover {
+  transform: scale(1.06) rotate(-2deg);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
 }
 
 /* Media query for screens smaller than 640px */
@@ -42,4 +48,29 @@
       flex-direction: column; /* Stack text and image vertically */
       align-items: center; /* Center-align content */
   }
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.section-animate {
+  animation: fadeInUp 0.8s cubic-bezier(0.23, 1, 0.32, 1) both;
+}
+
+.experience-item, .project-item {
+  transition: transform 0.3s cubic-bezier(0.23, 1, 0.32, 1), box-shadow 0.3s;
+}
+
+.experience-item:hover, .project-item:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
 }
