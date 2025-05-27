@@ -57,6 +57,10 @@ function App() {
                             <h4>HCI Researcher</h4>
                             <img src={require("./static/assets/pittsci.png")} alt="HCI Logo" />
                         </div>
+                        <div className="experience-item">
+                            <h4>Software Engineer Intern</h4>
+                            <img src={require("./static/assets/character_ai_logo.jpeg")} alt="Character.ai Logo" />
+                        </div>
                     </div>
                 </Section>
                 <Section title="Projects">
