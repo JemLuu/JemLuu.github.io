@@ -35,6 +35,10 @@ function App() {
                     <div className="experience-grid">
                         <div className="experience-item">
                             <h4>Software Engineer Intern</h4>
+                            <img src={require("./static/assets/character_ai_logo.jpeg")} alt="Character.ai Logo" />
+                        </div>
+                        <div className="experience-item">
+                            <h4>Software Engineer Intern</h4>
                             <img src={require("./static/assets/pnc.png")} alt="PNC Logo" />
                         </div>
                         <div className="experience-item">
@@ -42,29 +46,61 @@ function App() {
                             <img src={require("./static/assets/comcast.png")} alt="Comcast Logo" />
                         </div>
                         <div className="experience-item">
-                            <h4>Part-Time Software Engineer Intern</h4>
+                            <h4>Software Engineer Intern</h4>
                             <img src={require("./static/assets/sunraydrugs.png")} alt="SunRay Drugs Logo" />
+                        </div>
+                        <div className="experience-item">
+                            <h4>Social Media Manager(CSC at Pitt)</h4>
+                            <img src={require("./static/assets/csc.png")} alt="CSC Logo" />
                         </div>
                         <div className="experience-item">
                             <h4>Undergraduate Teaching Assistant (CS0012, Intro To Computing in Python) </h4>
                             <img src={require("./static/assets/pitt.png")} alt="Pitt Logo" />
                         </div>
                         <div className="experience-item">
-                            <h4>Video Media Officer (CSC at Pitt)</h4>
-                            <img src={require("./static/assets/csc.png")} alt="CSC Logo" />
-                        </div>
-                        <div className="experience-item">
                             <h4>HCI Researcher</h4>
                             <img src={require("./static/assets/pittsci.png")} alt="HCI Logo" />
-                        </div>
-                        <div className="experience-item">
-                            <h4>Software Engineer Intern</h4>
-                            <img src={require("./static/assets/character_ai_logo.jpeg")} alt="Character.ai Logo" />
                         </div>
                     </div>
                 </Section>
                 <Section title="Projects">
                     <div className="project-grid">
+                        <div className="project-item">
+                            <h4>Scam Shield</h4>
+                            <ul>
+                                <li>Real time phone call monitoring and scam detection system; won 1st Place Cybersecurity at HenHacks</li>
+                                <li>React, FastAPI, OpenAI GPT-4, Twilio Voice API, ngrok</li>
+                                <li>
+                                    <a href="https://github.com/JemLuu/scam-shield" target="_blank" rel="noopener noreferrer">
+                                        github repo
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div className="project-item">
+                            <h4>Dwag Bot</h4>
+                            <ul>
+                                <li>Automatic social media content aggregation bot for Instagram/TikTok DMs; for Pitt CSC's social media team</li>
+                                <li>Node.js, Instagram API, Playwright, Discord Webhooks</li>
+                                <li>
+                                    <a href="https://github.com/JemLuu/creator-tool" target="_blank" rel="noopener noreferrer">
+                                        github repo
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div className="project-item">
+                            <h4>EchoLens</h4>
+                            <ul>
+                                <li>Web-app that enables continuous narration of the objects in a user’s surroundings; won Best Social Good Hack at BitCamp</li>
+                                <li>React, MediaDevices, Flask, OpenAI API </li>
+                                <li>
+                                    <a href="https://github.com/JemLuu/bitcamp" target="_blank" rel="noopener noreferrer">
+                                        github repo
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                         <div className="project-item">
                             <h4>Social Space</h4>
                             <ul>
@@ -102,7 +138,7 @@ function App() {
                             </ul>
                         </div>
                         <div className="project-item">
-                            <h3>Side Quest</h3>
+                            <h4>Side Quest</h4>
                             <ul>
                                 <li>iOS App that gives the user fun quests to take on</li>
                                 <li>Swift, SwiftUI, Xcode</li>
@@ -114,7 +150,7 @@ function App() {
                             </ul>
                         </div>     
                         <div className="project-item">
-                            <h3>website</h3>
+                            <h4>website</h4>
                             <ul>
                                 <li>This website you're on is a project of mine too!</li>
                                 <li>React, HTML/CSS</li>
