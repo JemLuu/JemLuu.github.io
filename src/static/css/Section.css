@@ -25,6 +25,7 @@ section:hover {
 
 h2 {
     margin-top: 0;
+    margin-bottom: 20px;
     font-size: 1.5em;
     font-weight: bold;
 }
@@ -111,7 +112,8 @@ h2 {
 }
 
 .project-item h4 {
-    margin-bottom: 15px;
+    margin-bottom: 8px;
+    margin-top: 0;
     font-size: 1.2em;
     background: linear-gradient(135deg, #333 0%, #666 100%);
     -webkit-background-clip: text;
@@ -195,6 +197,15 @@ h2 {
 .project-item a:hover {
     color: #ff9d3d;
     text-shadow: 0 0 8px rgba(242, 139, 37, 0.3);
+}
+
+.project-item ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.project-item li {
+    margin-bottom: 6px;
 }
 
 /* Responsive Design */
