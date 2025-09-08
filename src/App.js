@@ -13,7 +13,7 @@ function App() {
                 <Section title="About">
                     <div className="about-grid">
                         <div className="about-text">
-                            <h3>Hi, I'm Jeremy! 😄</h3>
+                            <h3>Hi, I'm Jeremy! 🙃</h3>
                             <h3>A little about me, I...</h3>
                             <ul>
                                 <li>study Computer Science @ University of Pittsburgh</li>
