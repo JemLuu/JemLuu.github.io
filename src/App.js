@@ -50,7 +50,7 @@ function App() {
                             <img src={require("./static/assets/sunraydrugs.png")} alt="SunRay Drugs Logo" />
                         </div>
                         <div className="experience-item">
-                            <h4>Social Media Manager(CSC at Pitt)</h4>
+                            <h4>Social Media Manager (CSC at Pitt)</h4>
                             <img src={require("./static/assets/csc.png")} alt="CSC Logo" />
                         </div>
                         <div className="experience-item">
