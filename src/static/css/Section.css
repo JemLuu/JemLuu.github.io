@@ -1,12 +1,26 @@
 section {
-    margin: 20px auto;
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
-    border-radius: 15px; /* Rounded corners */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow */
+    margin: 30px auto;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 20px;
+    box-shadow: 
+        0 8px 32px 0 rgba(31, 38, 135, 0.12),
+        inset 0 0 0 1px rgba(255, 255, 255, 0.08);
     position: relative;
     z-index: 2;
-    width: 80%;
+    width: 85%;
+    max-width: 1200px;
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+section:hover {
+    transform: translateY(-2px);
+    box-shadow: 
+        0 12px 40px 0 rgba(31, 38, 135, 0.18),
+        inset 0 0 0 1px rgba(255, 255, 255, 0.12);
 }
 
 h2 {
@@ -16,12 +30,16 @@ h2 {
 }
 
 .content {
-    background-color: #ffe5e5;
-    padding: 20px;
-    border-radius: 10px;
+    background: rgba(255, 229, 229, 0.3);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    padding: 25px;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
     position: relative;
     display: flex;
     align-items: center;
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 .circle {
@@ -39,16 +57,66 @@ h2 {
 }
 
 .experience-item {
-    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
-    padding: 20px;
-    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    padding: 25px;
+    border-radius: 16px;
     text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for effect */
+    box-shadow: 
+        0 4px 24px 0 rgba(31, 38, 135, 0.08),
+        inset 0 0 0 1px rgba(255, 255, 255, 0.05);
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+.experience-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, 
+        transparent,
+        rgba(255, 255, 255, 0.4),
+        transparent
+    );
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.experience-item:hover::before {
+    opacity: 1;
+}
+
+.experience-item:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 
+        0 8px 32px 0 rgba(31, 38, 135, 0.15),
+        inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.12);
 }
 
 .experience-item h4 {
     margin-bottom: 10px;
     flex-grow: 1; /* Ensures the heading grows to push the image down */
+    font-size: 1.1em;
+    background: linear-gradient(135deg, #333 0%, #666 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.project-item h4 {
+    margin-bottom: 15px;
+    font-size: 1.2em;
+    background: linear-gradient(135deg, #333 0%, #666 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .experience-item img {
@@ -68,34 +136,126 @@ h2 {
 }
 
 .project-item {
-    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for effect */
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 
+        0 4px 24px 0 rgba(31, 38, 135, 0.08),
+        inset 0 0 0 1px rgba(255, 255, 255, 0.05);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 100%; /* Ensure the item grows to fit the content */
-    min-height: 200px; /* Add a minimum height for visual consistency */
-    box-sizing: border-box; /* Ensure padding is included in height/width */
+    height: 100%;
+    min-height: 200px;
+    box-sizing: border-box;
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+    position: relative;
+    overflow: hidden;
 }
 
-/* Adjust for smaller screens */
+.project-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, 
+        transparent,
+        rgba(255, 255, 255, 0.4),
+        transparent
+    );
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.project-item:hover::before {
+    opacity: 1;
+}
+
+.project-item:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 
+        0 8px 32px 0 rgba(31, 38, 135, 0.15),
+        inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.12);
+}
+
+.project-item a {
+    color: #f28b25;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.project-item a:hover {
+    color: #ff9d3d;
+    text-shadow: 0 0 8px rgba(242, 139, 37, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 1280px) {
+    section {
+        width: 90%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .experience-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 @media (max-width: 768px) {
+    section {
+        width: 95%;
+        padding: 20px;
+        margin: 20px auto;
+    }
+    
+    .content {
+        padding: 20px;
+    }
+    
     .project-grid {
-        grid-template-columns: 1fr; /* One column on smaller screens */
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .experience-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .experience-item,
+    .project-item {
+        padding: 20px;
+    }
+    
+    h2 {
+        font-size: 1.3em;
     }
 }
 
-
-@media (max-width: 1224px) {
-    .experience-grid {
-        grid-template-columns: repeat(2, 1fr); /* Two columns on smaller screens */
+@media (max-width: 480px) {
+    section {
+        width: 98%;
+        padding: 15px;
+        border-radius: 15px;
     }
-}
-
-@media (max-width: 940px) {
-    .experience-grid {
-        grid-template-columns: 1fr; /* One column on very small screens */
+    
+    .content {
+        padding: 15px;
+        border-radius: 12px;
+    }
+    
+    .experience-item,
+    .project-item {
+        padding: 15px;
+        border-radius: 12px;
     }
 }

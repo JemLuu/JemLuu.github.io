@@ -28,25 +28,91 @@
   margin-bottom: 10px; /* Space between list items */
 }
 
+.about-text a {
+  color: #f28b25;
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.about-text a::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #f28b25, #ff9d3d);
+  transition: width 0.3s ease;
+}
+
+.about-text a:hover {
+  color: #ff9d3d;
+  text-shadow: 0 0 8px rgba(242, 139, 37, 0.2);
+}
+
+.about-text a:hover::after {
+  width: 100%;
+}
+
 .about-image img {
-  width: 300px; /* Adjust the size of the image */
+  width: 300px;
   height: 300px;
-  border-radius: 50%; /* Makes the image circular */
-  object-fit: cover; /* Ensures the image fills the circle without stretching */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for effect */
-  transition: transform 0.4s cubic-bezier(0.23, 1, 0.32, 1), box-shadow 0.3s;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 
+    0 8px 32px rgba(31, 38, 135, 0.15),
+    0 0 0 1px rgba(255, 255, 255, 0.2);
+  transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+  border: 3px solid rgba(255, 255, 255, 0.3);
 }
 
 .about-image img:hover {
   transform: scale(1.06) rotate(-2deg);
-  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+  box-shadow: 
+    0 12px 40px rgba(31, 38, 135, 0.25),
+    0 0 0 1px rgba(255, 255, 255, 0.3);
+  border-color: rgba(255, 255, 255, 0.5);
 }
 
-/* Media query for screens smaller than 640px */
-@media (max-width: 640px) {
+/* Responsive Design */
+@media (max-width: 768px) {
   .about-grid {
-      flex-direction: column; /* Stack text and image vertically */
-      align-items: center; /* Center-align content */
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+  }
+  
+  .about-text {
+      text-align: center;
+  }
+  
+  .about-text ul {
+      text-align: left;
+      display: inline-block;
+  }
+  
+  .about-image img {
+      width: 250px;
+      height: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-grid {
+      padding: 15px;
+      gap: 20px;
+  }
+  
+  .about-text h3 {
+      font-size: 1.4em;
+  }
+  
+  .about-image img {
+      width: 200px;
+      height: 200px;
   }
 }
 
@@ -62,15 +128,28 @@
   }
 }
 
+@keyframes shimmer {
+  0% {
+    background-position: -200% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
+}
+
 .section-animate {
   animation: fadeInUp 0.8s cubic-bezier(0.23, 1, 0.32, 1) both;
 }
 
-.experience-item, .project-item {
-  transition: transform 0.3s cubic-bezier(0.23, 1, 0.32, 1), box-shadow 0.3s;
+.App {
+  position: relative;
+  min-height: 100vh;
 }
 
-.experience-item:hover, .project-item:hover {
-  transform: translateY(-8px) scale(1.03);
-  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+.content-container {
+  position: relative;
+  z-index: 1;
+  padding: 20px 0 50px;
 }
+
+/* Hover effects are now in Section.css with glass morphism styles */

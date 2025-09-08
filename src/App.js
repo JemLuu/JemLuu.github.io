@@ -18,7 +18,7 @@ function App() {
                             <ul>
                                 <li>study Computer Science @ University of Pittsburgh</li>
                                 <li>am co-concertmaster violinist for the university Symphony Orchestra</li>
-                                <li>am the Video Media Officer for Computer Science Club (<a href='https://www.instagram.com/csc.at.pitt/reels/' target="_blank">@csc.at.pitt</a> reels on instagram)</li>
+                                <li>am the Video Media Officer for Computer Science Club (<a href='https://www.instagram.com/csc.at.pitt/reels/' target="_blank" rel="noopener noreferrer">@csc.at.pitt</a> reels on instagram)</li>
                                 <ul>
                                     <li>acquired 70+ million views and 10k+ followers in 3 months! (from no views and 400 followers)</li>
                                 </ul>

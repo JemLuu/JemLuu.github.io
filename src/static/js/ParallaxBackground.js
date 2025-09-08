@@ -1,21 +1,37 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import '../css/ParallaxBackground.css';
 
 const ParallaxBackground = () => {
+    const parallaxRef = useRef(null);
 
     useEffect(() => {
-        const handleScroll = () => {
+        let ticking = false;
+        
+        const updateParallax = () => {
             const scrolled = window.scrollY;
-            const parallax = document.querySelector('.parallax');
-            parallax.style.transform = `translateY(${-scrolled * 0.3}px)`; // Invert the direction to move the background upwards
+            const parallaxElement = parallaxRef.current;
+            
+            if (parallaxElement) {
+                // Negative value to move slower in same direction as scroll
+                parallaxElement.style.transform = `translateY(${scrolled * -0.3}px)`;
+            }
+            
+            ticking = false;
         };
 
-        window.addEventListener('scroll', handleScroll);
+        const handleScroll = () => {
+            if (!ticking) {
+                window.requestAnimationFrame(updateParallax);
+                ticking = true;
+            }
+        };
 
+        window.addEventListener('scroll', handleScroll, { passive: true });
+        updateParallax(); // Initial call
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
-    return <div className="parallax"></div>;
+    return <div className="parallax" ref={parallaxRef}></div>;
 };
 
 export default ParallaxBackground;

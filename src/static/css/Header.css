@@ -1,13 +1,27 @@
 .header {
-    background-color: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
     text-align: center;
-    padding: 20px;
+    padding: 30px 20px;
     position: relative;
-    z-index: 1;
-    border-radius: 15px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin: 20px auto;
+    z-index: 10;
+    border-radius: 20px;
+    box-shadow: 
+        0 8px 32px 0 rgba(31, 38, 135, 0.15),
+        inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+    margin: 30px auto;
     width: 85%;
+    max-width: 1200px;
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.header:hover {
+    transform: translateY(-2px);
+    box-shadow: 
+        0 12px 40px 0 rgba(31, 38, 135, 0.2),
+        inset 0 0 0 1px rgba(255, 255, 255, 0.15);
 }
 
 .icon-links {
@@ -15,26 +29,53 @@
 }
 
 .icon-links a {
-    color: #333; /* Default icon color */
+    color: #333;
     margin: 0 15px;
     text-decoration: none;
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+    display: inline-block;
+    position: relative;
 }
 
 .icon-links a:hover {
-    color: #f28b25; /* Color on hover, feel free to customize */
+    color: #f28b25;
+    transform: translateY(-3px) scale(1.1);
+    filter: drop-shadow(0 4px 8px rgba(242, 139, 37, 0.3));
 }
 
 h1 {
     margin: 0;
-    font-size: 3.5em;
+    font-size: clamp(2rem, 5vw, 3.5rem);
     font-weight: bold;
+    background: linear-gradient(135deg, #333 0%, #555 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Color line under the header
-.color-line {
-    background-color: #FE5D25;
-    height: 5px;
-    width: 100%;
-    border-radius: 15px;
-} */
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header {
+        width: 92%;
+        padding: 25px 15px;
+        margin: 20px auto;
+    }
+    
+    .icon-links a {
+        margin: 0 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        width: 95%;
+        padding: 20px 10px;
+        border-radius: 15px;
+    }
+    
+    .icon-links a {
+        margin: 0 8px;
+    }
+}
 
